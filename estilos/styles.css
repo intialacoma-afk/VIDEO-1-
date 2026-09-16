@@ -1,0 +1,166 @@
+/* Reseteo básico y tipografía */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Cabecera */
+header {
+    background-color: #1a252f;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+/* Navegación usando inline-block permitido */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #1abc9c;
+    text-decoration: none;
+    margin: 0 12px;
+    display: inline-block; 
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor Principal con max-width: 100% y porcentajes */
+main {
+    max-width: 900px;
+    width: 90%;
+    margin: 25px auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border: 1px solid #e2e8f0;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+section h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #1abc9c;
+    padding-bottom: 5px;
+}
+
+/* Artículos informativos */
+article {
+    background: #f8fafc;
+    border-left: 4px solid #1abc9c;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+}
+
+article h3 {
+    margin-top: 0;
+    color: #34495e;
+}
+
+/* --- GALERÍA ADAPTABLE USANDO FLOAT Y PORCENTAJES (Sin clases) --- */
+section#galeria div {
+    width: 100%;
+}
+
+section#galeria figure {
+    float: left;             /* Uso estricto de float requerido */
+    width: 30%;              /* Porcentaje para distribución fluida */
+    margin-left: 1.6%;       /* Márgenes basados en porcentajes */
+    margin-right: 1.6%;
+    margin-bottom: 15px;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    padding: 10px;
+    box-sizing: border-box;  
+    text-align: center;
+}
+/* Estilos para la sección multimedia sin usar clases */
+section#multimedia {
+    margin-bottom: 35px;
+}
+
+section#multimedia figure {
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 15px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para la sección multimedia sin usar clases */
+section#multimedia {
+    margin-bottom: 35px;
+}
+
+section#multimedia figure {
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 15px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor fluido con porcentajes y max-width para el iframe */
+section#multimedia figure div {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    padding-bottom: 56.25%; /* Mantiene la proporción 16:9 perfecta y fluida */
+    height: 0;
+    margin: 0 auto;
+}
+
+section#multimedia figure div iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%; /* Restricción obligatoria de fluidez */
+    border: none;
+}
+
+section#multimedia figcaption {
+    font-size: 0.9em;
+    margin-top: 15px;
+    color: #64748b;
+    font-weight: bold;
+}
+/* Imágenes con la restricción obligatoria max-width: 100% */
+section#galeria img {
+    max-width: 100%;       /* Restricción estricta solicitada */
+    height: auto;          /* Mantiene la proporción */
+    display: block;
+    margin: 0 auto;
+}
+
+section#galeria figcaption {
+    font-size: 0.9em;
+    margin-top: 8px;
+    color: #64748b;
+    font-weight: bold;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background-color: #1a252f;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 0.9em;
+}
